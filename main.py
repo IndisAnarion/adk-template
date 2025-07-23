@@ -21,7 +21,7 @@ async def health_check():
     """Health check endpoint for load balancer and monitoring."""
     return {
         "status": "healthy",
-        "service": "kai-integration-system",
+        "service": "integration-system",
         "agents": ["bi_agent", "employee_agent"],
         "web_interface": true,
     }
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     print(f"📊 Agent Directory: {AGENT_DIR}")
     print(f"🌐 Web Interface: {'Enabled' if true else 'Disabled'}")
     print(f"🔗 Server URL: http://localhost:9999")
-    
+
     uvicorn.run(
         app, 
         host="0.0.0.0", 
