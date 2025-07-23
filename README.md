@@ -12,7 +12,7 @@ Follow these steps to set up the project:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/adk-template.git
+git clone https://github.com/IndisAnarion/adk-template.git
 cd adk-template
 
 # 2. Create a virtual environment
@@ -26,11 +26,18 @@ source venv/bin/activate
 
 # 4. Install requirements
 pip install -r requirements.txt
+
+# 5. Set up your Google API Key
+export GOOGLE_API_KEY="your-api-key-here"
+# On Windows:
+# set GOOGLE_API_KEY=your-api-key-here
 ```
 
 This will install:
 - google-adk: The Agent Development Kit
 - litellm: Library for working with multiple LLM providers
+
+**Note:** You must obtain a valid Google API Key with access to Gemini models to use this project. You can get an API key from [Google AI Studio](https://aistudio.google.com/apikey).
 
 ### 2. Project Structure
 
